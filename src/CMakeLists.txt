@@ -255,6 +255,6 @@ target_link_libraries(doxygen
     ${EXTRA_LIBS}
     ${CLANG_LIBS}
 )
-
+set_target_properties(doxygen PROPERTIES INSTALL_RPATH_USE_LINK_PATH TRUE)
 install(TARGETS doxygen DESTINATION bin)
 
